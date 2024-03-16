@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ucapan Selamat Ulang Tahun!</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <!-- Fancybox CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Fancybox JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+  
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <script>
+    $(document).ready(function() {
+      // Inisialisasi Fancybox
+      $(".foto").fancybox({
+        loop: true,
+        clickContent: false,
+        caption : function( instance, item ) {
+          var caption = $(this.element).data('caption') || '';
+          return ( caption.length ? '<div class="fancybox-caption">' + caption + '</div>' : '' );
+        }
+      });
+
+      // Inisialisasi Swiper
+      var swiper = new Swiper('.swiper-container', {
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        on: {
+          slideChange: function () {
+            // Gulingkan ke atas saat slide berubah
+            window.scrollTo(0, 0);
+          },
+        },
+      });
+    });
+  </script>
+
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="container">
+          <header>
+            <h1>Happy Birthday ALYA</h1>
+          </header>
+          <main>
+            <div class="fade-in">
+              <img src="birthday.png" alt="Selamat Ulang Tahun" class="birthday-img">
+            </div>
+            <p>Selamat ulang tahun sayang...</p>
+            <p>terimkasih untuk 23 tahun yang udah kamu lewatin selama ini, aku yakin sampai umur kamu yang 23 ini udah banyak rintangan dan pengalaman yang berhasiil kamu lewatin dengan baik</p>
+            <p>kamu KEREN... kamu HEBAT... </p>
+            <p>dari apa yang udah kamu lewatin di umur segini, aku banyak belajar, aku banyak dapet pelajaran dari apa yang kamu lewatin, aku sangat bersyukur bisa sama kamu sekarang, aku jadi saksi dimana kamu berjuang untuk membahagiakan orang-orang di sekeliling kamu, dimana kamu di uji, di kasih rintangan, tapi kamu tetap mau berjuang demi menyenangkan hati orang-orang di sekitar kamu</p>
+            <p>Sekarang waktunya untuk kamu fokus sama diri kamu, kami orang-orang yang sayang sama kamu juga berharap yang terbaik buat kamu, kami juga usahain gimana caranya bikin kamu seneng</p>
+            <p>dan aku.. aku masih disini sama kamu, aku selalu ada untuk kamu alya, walaupun lagi jauh kyak gini aku tetap jaga perasaan kamu dimanapun dan kapanpun, aku tau tujuan kita, aku tau tujuan aku bertahan disini, dan InsyaAllah aku akan bawa kamu ke tujuan kita, Nikah sama kamu, punya rumah kecil yang isinya keluarga kecil kita, hidup bahagia sampai tua...</p>
+            <p></p>
+            <p>maaf yaa, kalo panjang, yukk slide ke kiri... kita tiup lilin</p>
+            
+          </main>
+        </div>
+      </div>
+      
+      <!-- Halaman kedua dengan gambar kue ulang tahun 3D -->
+      <div class="swiper-slide">
+        <div class="container">
+          <main>
+            <div class="cake-img">
+              <img src="cake.png" alt="Kue Ulang Tahun 3D">
+            </div>
+            <p>aku lagi gaada disana, jadi lilin sama kuenya lewat sini dulu yaa...</p>
+            <p>jangan lupa make a wish</p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p>kalo udah, yuk slide lagi, kita liat foto-foto, hehe</p>
+          </main>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="container">
+
+          <p>ini beberapa aja sih fotonya</p>
+          <main>
+            <div class="photo-grid">
+              <div class="photo">
+                <a href="photo1.jpg" data-fancybox="gallery" data-caption="Foto ke-1: Ucapan Selamat Ulang Tahun!">
+                  <img src="photo1.jpg" alt="Foto 1" class="foto">
+                </a>
+              </div>
+
+                <p>kalo yang ini foto firs date kita ke PVJ, masih malu malu bgt ini mah, WKWKKWKWKWK</p>
+              <div class="photo">
+                <a href="photo2.jpg" data-fancybox="gallery" data-caption="Foto ke-2: Kue Ulang Tahun Spesial!">
+                  <img src="photo2.jpg" alt="Foto 2" class="foto">
+                </a>
+              </div>
+              <p>ini waktu kita nonton konser, seru bgt ga sihh...</p>
+              <div class="photo">
+                <a href="photo3.jpg" data-fancybox="gallery" data-caption="Foto ke-3: Moment Spesial Bersama Teman!">
+                  <img src="photo3.jpg" alt="Foto 3" class="foto">
+                </a>
+              </div>
+              <p>ini waktu aku wisuda, gatau kenapa suka bgt aja liat foto ini</p>
+              <div class="photo">
+                <a href="photo4.jpg" data-fancybox="gallery" data-caption="Foto ke-4: Kue Ulang Tahun yang Lezat!">
+                  <img src="photo4.jpg" alt="Foto 4" class="foto">
+                </a>
+              </div>
+              <p>naahhh, inii, foto bareng pertama, masih JAGA JARAK AMAN</p>
+            </div>
+          </main>
+        </div>
+      </div>
+
+
+
+
+      
+      
+    </div>
+    <!-- Tombol navigasi -->
+  </div>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+  
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      on: {
+        slideChange: function () {
+          // Gulingkan ke atas saat slide berubah
+          window.scrollTo(0, 0);
+        },
+      },
+    });
+
+    $(document).ready(function() {
+      $(".foto").fancybox({
+        loop: true,
+        clickContent: false,
+        caption : function( instance, item ) {
+          var caption = $(this.element).data('caption') || '';
+          return ( caption.length ? '<div class="fancybox-caption">' + caption + '</div>' : '' );
+        }
+      });
+    });
+  </script>
+
+  <audio autoplay loop controls style="display: none;">
+    <source src="birthday_song.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</body>
+</html>
